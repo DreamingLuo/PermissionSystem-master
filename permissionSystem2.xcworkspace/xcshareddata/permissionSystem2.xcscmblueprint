@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "82BD755BC97B3FF6741C99997F540851CF5DD155",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "82BD755BC97B3FF6741C99997F540851CF5DD155" : 0,
+    "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C06A3BCA-72B1-4B55-949C-61B00C405EC2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "82BD755BC97B3FF6741C99997F540851CF5DD155" : "PermissionSystem-master\/",
+    "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53" : "..\/Desktop\/CryptoSwift"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "permissionSystem2",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "permissionSystem2.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DreamingLuo\/PermissionSystem-master.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "82BD755BC97B3FF6741C99997F540851CF5DD155"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/krzyzanowskim\/CryptoSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C3D8ED1CB28D809ADCE2C0DE74935E8A502ACD53"
+    }
+  ]
+}

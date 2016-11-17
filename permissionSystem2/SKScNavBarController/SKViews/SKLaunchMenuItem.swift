@@ -14,7 +14,7 @@ class SKLaunchMenuItem: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        titleLabel = UILabel(frame: CGRectMake(0, 0, kScreenWidth / 5, 30))
+        titleLabel = UILabel(frame: CGRectMake(0, 0, kScreenWidth / 4+5, 30))
         titleLabel.backgroundColor = UIColor.groupTableViewBackgroundColor()
         titleLabel.font = UIFont.systemFontOfSize(14)
         titleLabel.textAlignment = NSTextAlignment.Center

@@ -43,7 +43,9 @@ class SKScNavBar: UIView, SKLaunchMenuDelegate {
      * 选中每个Item时下面的横线的颜色
      */
     var lineColor:UIColor!
+    //所有items标题的图片
     
+    var itemsTitlesImage:NSArray!
     /**
      * 展开扩展菜单栏的按钮上的图片
      */
@@ -112,7 +114,7 @@ class SKScNavBar: UIView, SKLaunchMenuDelegate {
      * 设置Item上的数据
      */
     func setItemsData() {
-                
+        
         itemsWidth = getItemsWidthWithTitles(itemsTitles)
         if itemsWidth.count != 0 {
             let contentWidth = getScNavContentAddScNavBarItemsWithItemsWidth(itemsWidth)
@@ -139,7 +141,7 @@ class SKScNavBar: UIView, SKLaunchMenuDelegate {
     private func configView() {
         let frameX = showArrowButton ? (kScreenWidth - kArrowButtonWidth) : kScreenWidth
         if showArrowButton {
-            arrowBtnImageView = UIImageView(frame: CGRectMake(frameX, 0, kArrowButtonWidth, kArrowButtonWidth))
+            arrowBtnImageView = UIImageView(frame: CGRectMake(frameX+20, 20, 20, 20))
             arrowBtnImageView.userInteractionEnabled = true
             
             arrowBtnImageView.image = arrowBtnImage
@@ -155,26 +157,60 @@ class SKScNavBar: UIView, SKLaunchMenuDelegate {
         scNavBar.showsHorizontalScrollIndicator = false
         self.addSubview(scNavBar)
         //调用给视图设置阴影的方法
-        setShadowForView(self, shadowRadius: 10.0, shadowOpacity: 10.0)
+        //setShadowForView(self, shadowRadius: 10.0, shadowOpacity: 10.0)
     }
     
     //MARK: -- 往导航栏上添加ItemButton
     private func getScNavContentAddScNavBarItemsWithItemsWidth(widths:NSArray) -> CGFloat {
         var buttonX:CGFloat = 0
+        var ImageX:CGFloat = 20
         for var index = 0; index < itemsTitles.count; index++ {
             let button = UIButton(type: UIButtonType.Custom)
-            button.frame = CGRectMake(buttonX, 0, widths[index] as! CGFloat, kScNavBarHeight)
+            button.frame = CGRectMake(buttonX, 35, widths[index] as! CGFloat, 20)
             button.setTitle((itemsTitles[index] as! String), forState: UIControlState.Normal)
             button.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
             button.titleLabel?.font = UIFont.systemFontOfSize(14)
             button.addTarget(self, action: "itemsBtnAction:", forControlEvents: UIControlEvents.TouchUpInside)
+            //button.backgroundColor=UIColor.orangeColor()
+            
+            let titleImage=UIImageView()
+            
+            print(widths[index])
+            
+            //标题图片的间隔
+            
+            // let a =getItemsImageWidthWithTitles(<#T##titles: NSArray##NSArray#>)
+            
+            
+            
+            titleImage.frame=CGRect(x: ImageX, y: 5, width: 25, height: 25)
+            itemsTitlesImage=["title1","title4","title5","title6","title5","title6","title7","title7","title5","title5","title4","title6","title7","title4","title5","title6","title5","title6","title5","title5"]
+            
+            titleImage.image=UIImage(named: itemsTitlesImage[index] as! String)
+            
             scNavBar.addSubview(button)
+            scNavBar.addSubview(titleImage)
             
             items.addObject(button)
             buttonX += widths[index] as! CGFloat
+            
+            if index==0 {
+                ImageX  += widths[index] as! CGFloat+15
+            }
+            else
+            {
+                 ImageX  += widths[index] as! CGFloat
+            
+            }
+            
+                
+            
+            
+            
+            
         }
         let btn = items[0] as! UIButton
-        btn.setTitleColor(UIColor.redColor(), forState: UIControlState.Normal)
+        btn.setTitleColor(UIColor(red: 22/255, green: 164/255, blue: 174/255, alpha: 0.95), forState: UIControlState.Normal)
         btn.titleLabel?.font = UIFont.systemFontOfSize(16)
         self.setLineWithItensWidth(widths[0] as! CGFloat)
         
@@ -200,11 +236,23 @@ class SKScNavBar: UIView, SKLaunchMenuDelegate {
         for title in titles {
             let str = title as! NSString
             let size:CGSize = str.sizeWithAttributes([NSFontAttributeName:UIFont.systemFontOfSize(UIFont.systemFontSize())])
-            let fValue:CGFloat = size.width + 40
+            let fValue:CGFloat = size.width + 30
             itemsWidths.addObject(fValue)
         }
         return itemsWidths
     }
+    //MARK: -- 通过Item上的标题获取每个Item的宽度组成的数组
+    private func getItemsImageWidthWithTitles(titles:NSArray) -> NSArray {
+        let itemsWidths = NSMutableArray()
+        for title in titles {
+            let str = title as! NSString
+            let size:CGSize = str.sizeWithAttributes([NSFontAttributeName:UIFont.systemFontOfSize(UIFont.systemFontSize())])
+            let fValue:CGFloat = size.width
+            itemsWidths.addObject(fValue)
+        }
+        return itemsWidths
+    }
+    
     
     //MARK: -- 添加扩展菜单栏
     private func showLaunchMenu(show:Bool) {
@@ -231,7 +279,7 @@ class SKScNavBar: UIView, SKLaunchMenuDelegate {
                 self.arrowBtnImageView.transform = CGAffineTransformIdentity
                 }, completion: { (finished:Bool) -> Void in
                     self.scNavBar.hidden = !self.scNavBar.hidden
-               self.setShadowForView(self.arrowBtnImageView, shadowRadius: 10.0, shadowOpacity: 10.0)
+                   // self.setShadowForView(self.arrowBtnImageView, shadowRadius: 10.0, shadowOpacity: 10.0)
             })
         }
     }
@@ -245,7 +293,8 @@ class SKScNavBar: UIView, SKLaunchMenuDelegate {
     //MARK: -- 展开扩展菜单栏按钮点击事件
     func arrowBtnTapGesAction() {
         showScNavBarItemMenu = !showScNavBarItemMenu
-        let height = kScreenWidth / 5.0 * CGFloat(itemsTitles.count / 4) + CGFloat(1.5)
+        let height=SCREEN_HEIGHT-100
+        // let height = kScreenWidth / 5.0 * CGFloat(itemsTitles.count / 4) + CGFloat(1.5)
         delegate?.isShowScNavBarItemMenu(showScNavBarItemMenu, height: height)
     }
     

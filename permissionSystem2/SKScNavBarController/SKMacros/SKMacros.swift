@@ -21,7 +21,7 @@ let kNavBarHeight:CGFloat = 44
 /**
 * 展开扩展菜单按钮的宽度
 */
-let kArrowButtonWidth:CGFloat = 30     //可以在这改变导航栏的高度
+let kArrowButtonWidth:CGFloat = 60     //可以在这改变导航栏的高度
 /**
 * 自定义滑动导航栏的高度
 */

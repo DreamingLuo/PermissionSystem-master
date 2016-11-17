@@ -8,9 +8,10 @@
 
 import UIKit
 
-protocol TreeTableViewCellDelegate: NSObjectProtocol {
-    func cellClick() //参数还没加，TreeNode表示节点
-}
+//protocol TreeTableViewCellDelegate: NSObjectProtocol {
+//    func cellClick(text:String) //参数还没加，TreeNode表示节点
+//}
+
 
 
 class TreeTableView: UITableView, UITableViewDataSource,UITableViewDelegate{
@@ -36,6 +37,12 @@ class TreeTableView: UITableView, UITableViewDataSource,UITableViewDelegate{
         tableView.registerNib(nib, forCellReuseIdentifier: NODE_CELL_ID)
         
         var cell = tableView.dequeueReusableCellWithIdentifier(NODE_CELL_ID) as! TreeNodeTableViewCell
+         
+       
+        
+        cell.nodebutton.tag=indexPath.row
+        
+        cell.nodebutton.addTarget(self, action: "haha:", forControlEvents: UIControlEvents.TouchUpInside)
         
         var node: TreeNode = mNodes![indexPath.row]
         
@@ -51,8 +58,19 @@ class TreeTableView: UITableView, UITableViewDataSource,UITableViewDelegate{
         }
         
         cell.nodeName.text = node.name
-        cell.nodeDesc.text = node.desc
+        //cell.nodeDesc.text = node.desc
         return cell
+    }
+    
+    
+    func haha(sender:UIButton)
+    {
+    
+    
+        print(sender.tag)
+    
+    
+    
     }
     
     required init?(coder aDecoder: NSCoder) {

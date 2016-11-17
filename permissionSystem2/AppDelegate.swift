@@ -8,30 +8,83 @@
 
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var drawerController:MMDrawerController!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    
+        
+               
+       // NSThread .sleepForTimeInterval(5.0)
         self.window=UIWindow(frame:UIScreen.mainScreen().bounds)
         
-        
-        let root  = RootViewController()
-        
-        let nav=UINavigationController(rootViewController:root)
-        
-        
-        self.window?.rootViewController=nav
-        self.window?.makeKeyAndVisible()
+        print(NSUserDefaults.standardUserDefaults().boolForKey(LGFirstLaunch))
+        // 检测用户是不是第一次启动
+        if !NSUserDefaults.standardUserDefaults().boolForKey(LGFirstLaunch) {
+            // 是第一次启动
+            window?.rootViewController = GuideViewController()
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: LGFirstLaunch)
+        } else {
+            let tabBarController = RootTabbarController()
+            
+            window?.rootViewController = tabBarController
+        }
+        window?.makeKeyAndVisible()
         
         return true
 
-        
-        
-        
+//        let rootTabbarVC = RootTabbarController()
+//        
+//       // let GuideVC=GuideViewController()
+//        self.window?.rootViewController=rootTabbarVC
+//        self.window?.makeKeyAndVisible()
+//        
+//        return true
+
+//        let root  = RootViewController()
+//        //创建窗口
+//        let mainFrame = UIScreen.mainScreen().bounds
+//        window = UIWindow(frame: mainFrame)
+//        
+//        
+//        let leftViewController = LeftViewController()
+//        
+//        //let leftNaVc=UINavigationController(rootViewController:leftViewController)
+//        
+//        //设置视图
+//       
+//        //let centerViewController = CenterViewController()
+//        
+//        let centerNavigationController = UINavigationController(rootViewController: root)
+//        //let leftNavigationController = UINavigationController(rootViewController: leftViewController)
+//        
+//        drawerController = MMDrawerController(centerViewController: centerNavigationController, leftDrawerViewController: leftViewController )
+//        
+//          
+//        
+//        drawerController.maximumLeftDrawerWidth = SCREEN_Width * 0.70
+//        //手势
+//        drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureMode.All
+//        drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.All
+//        
+//        //设置动画，这里是设置打开侧栏透明度从0到1
+//        drawerController.setDrawerVisualStateBlock { (drawerController, drawerSide, percentVisible) -> Void in
+//            
+//            var sideDrawerViewController:UIViewController?
+//            if(drawerSide == MMDrawerSide.Left){
+//                sideDrawerViewController = drawerController.leftDrawerViewController;
+//            }
+//            sideDrawerViewController?.view.alpha = percentVisible
+//        }
+//        //设置根试图
+//        self.window?.rootViewController = drawerController
+//        //设置可见
+//        window?.makeKeyAndVisible()
+//        return true
+//        
         
     }
 

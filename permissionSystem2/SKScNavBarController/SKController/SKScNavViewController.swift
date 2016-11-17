@@ -9,7 +9,7 @@
 import UIKit
 
 class SKScNavViewController: UIViewController, SKScNavBarDelegate, UIScrollViewDelegate {
-
+    
     //MARK:必须设置的一些属性
     /**
      * @param scNaBarColor
@@ -59,7 +59,7 @@ class SKScNavViewController: UIViewController, SKScNavBarDelegate, UIScrollViewD
      */
     init(show:Bool){
         super.init(nibName: nil, bundle: nil)
-        self.showArrowButton = show
+        //self.showArrowButton = show
     }
     
     /**
@@ -104,7 +104,7 @@ class SKScNavViewController: UIViewController, SKScNavBarDelegate, UIScrollViewD
         viewcontroller.addChildViewController(self)
         viewcontroller.view.addSubview(self.view)
     }
-  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //调用初始化属性的方法
@@ -125,7 +125,7 @@ class SKScNavViewController: UIViewController, SKScNavBarDelegate, UIScrollViewD
         currentIndex = 1
         scNavBarColor = scNavBarColor != nil ? scNavBarColor : kNavColor
         if scNavBarArrowImage == nil {
-            scNavBarArrowImage = UIImage(named: "arrow.png")
+            scNavBarArrowImage = UIImage(named: "dropDown")
         }
         if showArrowButton == nil {
             showArrowButton = true

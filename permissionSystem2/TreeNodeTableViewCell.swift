@@ -8,18 +8,37 @@
 
 import UIKit
 
-class TreeNodeTableViewCell: UITableViewCell {
 
+protocol TreeTableViewCellDelegate: NSObjectProtocol {
+    func cellClick(text:String) //参数还没加，TreeNode表示节点
+}
+class TreeNodeTableViewCell: UITableViewCell{
     
+    
+//
+   
+    
+    @IBOutlet weak var nodebutton: UIButton!
     @IBOutlet weak var background: UIView!
     @IBOutlet weak var nodeName: UILabel!
     @IBOutlet weak var nodeIMG: UIImageView!
-    @IBOutlet weak var nodeDesc: UILabel!
+    
+    var delegate:TreeTableViewCellDelegate!
+    
+    
+    
+   
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+    
+        
+        
     }
+    
+    
+ 
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

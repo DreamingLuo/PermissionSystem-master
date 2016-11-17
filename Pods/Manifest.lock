@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (3.4.2)
+  - MJRefresh (3.1.12)
+  - MMDrawerController (0.5.7):
+    - MMDrawerController/Core (= 0.5.7)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.5.7)
+    - MMDrawerController/MMDrawerVisualStates (= 0.5.7)
+    - MMDrawerController/Subclass (= 0.5.7)
+  - MMDrawerController/Core (0.5.7)
+  - MMDrawerController/MMDrawerBarButtonItem (0.5.7):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.5.7):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.5.7):
+    - MMDrawerController/Core
+  - SpreadButton (0.2.0)
+  - SwiftDate (3.0.8)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.0)
+  - MJRefresh
+  - MMDrawerController (~> 0.5.7)
+  - SpreadButton
+  - SwiftDate
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 6aa33201d20d069e1598891cf928883ff1888c7a
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1
+  SpreadButton: 008df24e689f93e82e43f34e08d86032b1ee2242
+  SwiftDate: 971f8b9394f664f2226b9c3ab64e801a7291c612
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: 2b17ce3ea05fa213986fdf10ecdd57e8f2d408b5
+
+COCOAPODS: 1.0.1

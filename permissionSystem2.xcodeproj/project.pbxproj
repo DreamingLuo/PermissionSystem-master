@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B61ECE371F87D98E2A4AD3EB /* Pods_permissionSystem2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E14E5D1B26877F4CB636BAA5 /* Pods_permissionSystem2.framework */; };
+		EB0DD0D11DAA03A500B91C1B /* DocumentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0DD0CF1DAA03A500B91C1B /* DocumentTableViewCell.swift */; };
+		EB0DD0D21DAA03A500B91C1B /* DocumentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB0DD0D01DAA03A500B91C1B /* DocumentTableViewCell.xib */; };
+		EB0DD0D41DAA2DBA00B91C1B /* showDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0DD0D31DAA2DBA00B91C1B /* showDocumentViewController.swift */; };
+		EB201F001DDAE5840034556D /* RoottabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB201EFF1DDAE5840034556D /* RoottabbarController.swift */; };
+		EB201F021DDAE7810034556D /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB201F011DDAE7810034556D /* ChartViewController.swift */; };
+		EB201F041DDAE7C00034556D /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB201F031DDAE7C00034556D /* MyViewController.swift */; };
 		EB3F273C1D8FB5CF005C8F86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F273B1D8FB5CF005C8F86 /* AppDelegate.swift */; };
 		EB3F273E1D8FB5CF005C8F86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F273D1D8FB5CF005C8F86 /* ViewController.swift */; };
 		EB3F27411D8FB5CF005C8F86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3F273F1D8FB5CF005C8F86 /* Main.storyboard */; };
 		EB3F27431D8FB5CF005C8F86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB3F27421D8FB5CF005C8F86 /* Assets.xcassets */; };
-		EB3F27461D8FB5CF005C8F86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB3F27441D8FB5CF005C8F86 /* LaunchScreen.storyboard */; };
 		EB3F27511D8FB5CF005C8F86 /* permissionSystem2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F27501D8FB5CF005C8F86 /* permissionSystem2Tests.swift */; };
 		EB3F275C1D8FB5CF005C8F86 /* permissionSystem2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F275B1D8FB5CF005C8F86 /* permissionSystem2UITests.swift */; };
 		EB3F276A1D8FB649005C8F86 /* RootViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F27691D8FB649005C8F86 /* RootViewControler.swift */; };
@@ -26,6 +32,10 @@
 		EB3F27801D8FD047005C8F86 /* SKScNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F277A1D8FD047005C8F86 /* SKScNavBar.swift */; };
 		EB3F27841D8FD0CF005C8F86 /* EnsureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F27831D8FD0CF005C8F86 /* EnsureViewController.swift */; };
 		EB3F27861D8FD73D005C8F86 /* choosePeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3F27851D8FD73D005C8F86 /* choosePeopleViewController.swift */; };
+		EB62054B1DB701F800B46383 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB62054A1DB701F800B46383 /* LeftViewController.swift */; };
+		EB62054D1DB73C9800B46383 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB62054C1DB73C9800B46383 /* mainViewController.swift */; };
+		EB6205511DB761CA00B46383 /* searchFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6205501DB761CA00B46383 /* searchFileViewController.swift */; };
+		EB62A26C1DDACF2E00F7B2F9 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB62A26B1DDACF2E00F7B2F9 /* MyCollectionViewCell.swift */; };
 		EB62D6981D90D3E500394FC9 /* recentlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB62D6971D90D3E500394FC9 /* recentlyViewController.swift */; };
 		EB62D69D1D90D43A00394FC9 /* departmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB62D69C1D90D43A00394FC9 /* departmentViewController.swift */; };
 		EB62D6A01D90D4AE00394FC9 /* organizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB62D69F1D90D4AE00394FC9 /* organizationViewController.swift */; };
@@ -33,11 +43,54 @@
 		EB63F4171D94CE6600BD30DB /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB63F4141D94CE6600BD30DB /* TreeNode.swift */; };
 		EB63F4181D94CE6600BD30DB /* DataInof.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB63F4151D94CE6600BD30DB /* DataInof.plist */; };
 		EB63F4191D94CE6600BD30DB /* TreeNodeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB63F4161D94CE6600BD30DB /* TreeNodeHelper.swift */; };
+		EB658BCC1DD404A100BB4E65 /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB658BCB1DD404A100BB4E65 /* GuideViewController.swift */; };
+		EB658BCE1DD4099200BB4E65 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB658BCD1DD4099200BB4E65 /* Launch Screen.storyboard */; };
+		EB658BD01DD4500F00BB4E65 /* fileSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB658BCF1DD4500F00BB4E65 /* fileSearchViewController.swift */; };
+		EB658BD21DD466AA00BB4E65 /* MyShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB658BD11DD466AA00BB4E65 /* MyShareViewController.swift */; };
+		EB6BEE271DACA5C900AD68A1 /* SpreadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6BEE251DACA5C900AD68A1 /* SpreadButton.swift */; };
+		EB6BEE281DACA5C900AD68A1 /* SpreadSubButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6BEE261DACA5C900AD68A1 /* SpreadSubButton.swift */; };
+		EB6FF56A1DDBF63B009137A5 /* LGConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6FF5691DDBF63B009137A5 /* LGConst.swift */; };
+		EB6FF56C1DDBFC85009137A5 /* LGNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6FF56B1DDBFC85009137A5 /* LGNavigationController.swift */; };
+		EB7A1EEA1DD198E300BA5620 /* DetailFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7A1EE91DD198E300BA5620 /* DetailFileViewController.swift */; };
 		EB823A501D926A0600C1D72C /* TreeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB823A4F1D926A0600C1D72C /* TreeTableView.swift */; };
 		EB823A521D926A0D00C1D72C /* TreeNodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB823A511D926A0D00C1D72C /* TreeNodeTableViewCell.swift */; };
 		EB823A541D926A1500C1D72C /* TreeNodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB823A531D926A1500C1D72C /* TreeNodeTableViewCell.xib */; };
 		EB823A561D926A1D00C1D72C /* tree_ex.png in Resources */ = {isa = PBXBuildFile; fileRef = EB823A551D926A1D00C1D72C /* tree_ex.png */; };
 		EB823A581D926A2300C1D72C /* tree_ec.png in Resources */ = {isa = PBXBuildFile; fileRef = EB823A571D926A2300C1D72C /* tree_ec.png */; };
+		EB8388DD1DAB3177007590C6 /* configureFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8388DC1DAB3177007590C6 /* configureFile.swift */; };
+		EB8388DF1DAB38EC007590C6 /* searchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8388DE1DAB38EC007590C6 /* searchViewController.swift */; };
+		EB89DA871DB4A1A90063DBA3 /* departmentFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB89DA861DB4A1A90063DBA3 /* departmentFile.swift */; };
+		EB8DD0581DD2BA0400A3B09F /* shareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8DD0571DD2BA0400A3B09F /* shareViewController.swift */; };
+		EB8EBB2B1DCB054900CEF708 /* showPeopleViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EBB2A1DCB054900CEF708 /* showPeopleViewController1.swift */; };
+		EB8EBB2D1DCB066300CEF708 /* showPeopleViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EBB2C1DCB066300CEF708 /* showPeopleViewController2.swift */; };
+		EB8EBB2F1DCB06D700CEF708 /* showPeopleviewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EBB2E1DCB06D700CEF708 /* showPeopleviewController3.swift */; };
+		EB8EBB311DCB16E300CEF708 /* showPeopleViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EBB301DCB16E300CEF708 /* showPeopleViewController4.swift */; };
+		EB8EBB331DCB172F00CEF708 /* showPeopleViewController5.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EBB321DCB172F00CEF708 /* showPeopleViewController5.swift */; };
+		EB8EBB351DCB176600CEF708 /* showPeopleViewController6.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EBB341DCB176600CEF708 /* showPeopleViewController6.swift */; };
+		EB8EBB3D1DCB196F00CEF708 /* showPeopleViewController7.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EBB3C1DCB196F00CEF708 /* showPeopleViewController7.swift */; };
+		EB8EBB3F1DCB1CAA00CEF708 /* showPeopleViewController8.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EBB3E1DCB1CAA00CEF708 /* showPeopleViewController8.swift */; };
+		EB8EBB411DCB1D5300CEF708 /* showPeopleViewController9.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EBB401DCB1D5300CEF708 /* showPeopleViewController9.swift */; };
+		EB8EBB431DCB1D7800CEF708 /* shwoPeopleViewController10.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EBB421DCB1D7800CEF708 /* shwoPeopleViewController10.swift */; };
+		EB8EBB471DCB1DA600CEF708 /* showPeopleViewController11.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EBB461DCB1DA600CEF708 /* showPeopleViewController11.swift */; };
+		EB8EBB491DCB1DC600CEF708 /* showPeopleViewContropller12.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EBB481DCB1DC600CEF708 /* showPeopleViewContropller12.swift */; };
+		EB8EBB4B1DCB1DE700CEF708 /* showPeopleViewController13.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EBB4A1DCB1DE700CEF708 /* showPeopleViewController13.swift */; };
+		EB8EBB4D1DCB1ED700CEF708 /* showPeopleViewController14.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EBB4C1DCB1ED700CEF708 /* showPeopleViewController14.swift */; };
+		EB8EBB4F1DCB1EF100CEF708 /* showPeopleViewController15.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EBB4E1DCB1EF100CEF708 /* showPeopleViewController15.swift */; };
+		EB8EBB511DCB1F0D00CEF708 /* showPeopleViewController16.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EBB501DCB1F0D00CEF708 /* showPeopleViewController16.swift */; };
+		EB8EBB531DCB1F2B00CEF708 /* showPeopleViewController17.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EBB521DCB1F2B00CEF708 /* showPeopleViewController17.swift */; };
+		EB8EBB551DCB22A900CEF708 /* showPeopleViewController19.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EBB541DCB22A900CEF708 /* showPeopleViewController19.swift */; };
+		EB8EBB591DCB22ED00CEF708 /* showPeopleViewController18.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EBB581DCB22ED00CEF708 /* showPeopleViewController18.swift */; };
+		EB8FFF031DAE31DB0003A5C3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EB8FFF021DAE31DB0003A5C3 /* MBProgressHUD.m */; };
+		EB925C671DD0179800608003 /* shareAndReadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB925C661DD0179700608003 /* shareAndReadViewController.swift */; };
+		EB9BDD2F1DA8DCF400FF6B65 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9BDD2E1DA8DCF400FF6B65 /* Common.swift */; };
+		EB9F1D001DD9805300D8F918 /* TimeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F1CFF1DD9805300D8F918 /* TimeSearchViewController.swift */; };
+		EB9F1D041DD9AE7500D8F918 /* departmentCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9F1D031DD9AE7500D8F918 /* departmentCollectionViewController.swift */; };
+		EBAAC9CE1DC72E560009ECA9 /* documentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBAAC9CC1DC72E560009ECA9 /* documentDetailViewController.swift */; };
+		EBAAC9CF1DC72E560009ECA9 /* documentDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBAAC9CD1DC72E560009ECA9 /* documentDetailViewController.xib */; };
+		EBE514101DCC80B400F6E3C4 /* fileListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5140F1DCC80B400F6E3C4 /* fileListViewController.swift */; };
+		EBEB0F7A1DAF636B00B7BD68 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEB0F791DAF636B00B7BD68 /* LoginViewController.swift */; };
+		EBFB3D6A1D99039B00CE7A1A /* showPeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFB3D681D99039B00CE7A1A /* showPeopleTableViewCell.swift */; };
+		EBFB3D6B1D99039B00CE7A1A /* showPeopleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBFB3D691D99039B00CE7A1A /* showPeopleTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,13 +111,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35F2EC3DBB70E57CA4B2A838 /* Pods-permissionSystem2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-permissionSystem2.release.xcconfig"; path = "Pods/Target Support Files/Pods-permissionSystem2/Pods-permissionSystem2.release.xcconfig"; sourceTree = "<group>"; };
+		E14E5D1B26877F4CB636BAA5 /* Pods_permissionSystem2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_permissionSystem2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB0DD0CF1DAA03A500B91C1B /* DocumentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentTableViewCell.swift; sourceTree = "<group>"; };
+		EB0DD0D01DAA03A500B91C1B /* DocumentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DocumentTableViewCell.xib; sourceTree = "<group>"; };
+		EB0DD0D31DAA2DBA00B91C1B /* showDocumentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showDocumentViewController.swift; sourceTree = "<group>"; };
+		EB201EFF1DDAE5840034556D /* RoottabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoottabbarController.swift; path = permissionSystem2/RoottabbarController.swift; sourceTree = "<group>"; };
+		EB201F011DDAE7810034556D /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChartViewController.swift; path = permissionSystem2/ChartViewController.swift; sourceTree = "<group>"; };
+		EB201F031DDAE7C00034556D /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyViewController.swift; path = permissionSystem2/MyViewController.swift; sourceTree = "<group>"; };
 		EB3F27381D8FB5CF005C8F86 /* permissionSystem2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = permissionSystem2.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB3F273B1D8FB5CF005C8F86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB3F273B1D8FB5CF005C8F86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = permissionSystem2/AppDelegate.swift; sourceTree = "<group>"; };
 		EB3F273D1D8FB5CF005C8F86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EB3F27401D8FB5CF005C8F86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EB3F27421D8FB5CF005C8F86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EB3F27451D8FB5CF005C8F86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EB3F27471D8FB5CF005C8F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB3F27421D8FB5CF005C8F86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = permissionSystem2/Assets.xcassets; sourceTree = "<group>"; };
+		EB3F27471D8FB5CF005C8F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = permissionSystem2/Info.plist; sourceTree = "<group>"; };
 		EB3F274C1D8FB5CF005C8F86 /* permissionSystem2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = permissionSystem2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB3F27501D8FB5CF005C8F86 /* permissionSystem2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = permissionSystem2Tests.swift; sourceTree = "<group>"; };
 		EB3F27521D8FB5CF005C8F86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,6 +143,10 @@
 		EB3F277A1D8FD047005C8F86 /* SKScNavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKScNavBar.swift; sourceTree = "<group>"; };
 		EB3F27831D8FD0CF005C8F86 /* EnsureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnsureViewController.swift; sourceTree = "<group>"; };
 		EB3F27851D8FD73D005C8F86 /* choosePeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = choosePeopleViewController.swift; sourceTree = "<group>"; };
+		EB62054A1DB701F800B46383 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		EB62054C1DB73C9800B46383 /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		EB6205501DB761CA00B46383 /* searchFileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchFileViewController.swift; sourceTree = "<group>"; };
+		EB62A26B1DDACF2E00F7B2F9 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "\U0010MyCollectionViewCell.swift"; sourceTree = "<group>"; };
 		EB62D6971D90D3E500394FC9 /* recentlyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = recentlyViewController.swift; sourceTree = "<group>"; };
 		EB62D69C1D90D43A00394FC9 /* departmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = departmentViewController.swift; sourceTree = "<group>"; };
 		EB62D69F1D90D4AE00394FC9 /* organizationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = organizationViewController.swift; sourceTree = "<group>"; };
@@ -90,11 +154,58 @@
 		EB63F4141D94CE6600BD30DB /* TreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		EB63F4151D94CE6600BD30DB /* DataInof.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DataInof.plist; sourceTree = "<group>"; };
 		EB63F4161D94CE6600BD30DB /* TreeNodeHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNodeHelper.swift; sourceTree = "<group>"; };
+		EB658BCB1DD404A100BB4E65 /* GuideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		EB658BCD1DD4099200BB4E65 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "permissionSystem2/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		EB658BCF1DD4500F00BB4E65 /* fileSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fileSearchViewController.swift; sourceTree = "<group>"; };
+		EB658BD11DD466AA00BB4E65 /* MyShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyShareViewController.swift; sourceTree = "<group>"; };
+		EB6BEE251DACA5C900AD68A1 /* SpreadButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpreadButton.swift; sourceTree = "<group>"; };
+		EB6BEE261DACA5C900AD68A1 /* SpreadSubButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpreadSubButton.swift; sourceTree = "<group>"; };
+		EB6FF5691DDBF63B009137A5 /* LGConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGConst.swift; sourceTree = "<group>"; };
+		EB6FF56B1DDBFC85009137A5 /* LGNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LGNavigationController.swift; sourceTree = "<group>"; };
+		EB7A1EE91DD198E300BA5620 /* DetailFileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailFileViewController.swift; sourceTree = "<group>"; };
 		EB823A4F1D926A0600C1D72C /* TreeTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeTableView.swift; sourceTree = "<group>"; };
 		EB823A511D926A0D00C1D72C /* TreeNodeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNodeTableViewCell.swift; sourceTree = "<group>"; };
 		EB823A531D926A1500C1D72C /* TreeNodeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TreeNodeTableViewCell.xib; sourceTree = "<group>"; };
 		EB823A551D926A1D00C1D72C /* tree_ex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree_ex.png; sourceTree = "<group>"; };
 		EB823A571D926A2300C1D72C /* tree_ec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tree_ec.png; sourceTree = "<group>"; };
+		EB8388DC1DAB3177007590C6 /* configureFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = configureFile.swift; sourceTree = "<group>"; };
+		EB8388DE1DAB38EC007590C6 /* searchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = searchViewController.swift; sourceTree = "<group>"; };
+		EB89DA861DB4A1A90063DBA3 /* departmentFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = departmentFile.swift; sourceTree = "<group>"; };
+		EB8DD0571DD2BA0400A3B09F /* shareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shareViewController.swift; sourceTree = "<group>"; };
+		EB8EBB2A1DCB054900CEF708 /* showPeopleViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showPeopleViewController1.swift; sourceTree = "<group>"; };
+		EB8EBB2C1DCB066300CEF708 /* showPeopleViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showPeopleViewController2.swift; sourceTree = "<group>"; };
+		EB8EBB2E1DCB06D700CEF708 /* showPeopleviewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showPeopleviewController3.swift; sourceTree = "<group>"; };
+		EB8EBB301DCB16E300CEF708 /* showPeopleViewController4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showPeopleViewController4.swift; sourceTree = "<group>"; };
+		EB8EBB321DCB172F00CEF708 /* showPeopleViewController5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showPeopleViewController5.swift; sourceTree = "<group>"; };
+		EB8EBB341DCB176600CEF708 /* showPeopleViewController6.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showPeopleViewController6.swift; sourceTree = "<group>"; };
+		EB8EBB3C1DCB196F00CEF708 /* showPeopleViewController7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showPeopleViewController7.swift; sourceTree = "<group>"; };
+		EB8EBB3E1DCB1CAA00CEF708 /* showPeopleViewController8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showPeopleViewController8.swift; sourceTree = "<group>"; };
+		EB8EBB401DCB1D5300CEF708 /* showPeopleViewController9.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showPeopleViewController9.swift; sourceTree = "<group>"; };
+		EB8EBB421DCB1D7800CEF708 /* shwoPeopleViewController10.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shwoPeopleViewController10.swift; sourceTree = "<group>"; };
+		EB8EBB461DCB1DA600CEF708 /* showPeopleViewController11.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showPeopleViewController11.swift; sourceTree = "<group>"; };
+		EB8EBB481DCB1DC600CEF708 /* showPeopleViewContropller12.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showPeopleViewContropller12.swift; sourceTree = "<group>"; };
+		EB8EBB4A1DCB1DE700CEF708 /* showPeopleViewController13.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showPeopleViewController13.swift; sourceTree = "<group>"; };
+		EB8EBB4C1DCB1ED700CEF708 /* showPeopleViewController14.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showPeopleViewController14.swift; sourceTree = "<group>"; };
+		EB8EBB4E1DCB1EF100CEF708 /* showPeopleViewController15.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showPeopleViewController15.swift; sourceTree = "<group>"; };
+		EB8EBB501DCB1F0D00CEF708 /* showPeopleViewController16.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showPeopleViewController16.swift; sourceTree = "<group>"; };
+		EB8EBB521DCB1F2B00CEF708 /* showPeopleViewController17.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showPeopleViewController17.swift; sourceTree = "<group>"; };
+		EB8EBB541DCB22A900CEF708 /* showPeopleViewController19.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showPeopleViewController19.swift; sourceTree = "<group>"; };
+		EB8EBB581DCB22ED00CEF708 /* showPeopleViewController18.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showPeopleViewController18.swift; sourceTree = "<group>"; };
+		EB8FFF011DAE31DB0003A5C3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = permissionSystem2/MBProgressHUD.h; sourceTree = "<group>"; };
+		EB8FFF021DAE31DB0003A5C3 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = permissionSystem2/MBProgressHUD.m; sourceTree = "<group>"; };
+		EB8FFF041DAE32270003A5C3 /* MBProgressHUD-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB925C661DD0179700608003 /* shareAndReadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shareAndReadViewController.swift; sourceTree = "<group>"; };
+		EB9BDCF31DA8C38200FF6B65 /* permissionSystem2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "permissionSystem2-Bridging-Header.h"; sourceTree = "<group>"; };
+		EB9BDD2E1DA8DCF400FF6B65 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Common.swift; path = permissionSystem2/Common.swift; sourceTree = "<group>"; };
+		EB9F1CFF1DD9805300D8F918 /* TimeSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSearchViewController.swift; sourceTree = "<group>"; };
+		EB9F1D031DD9AE7500D8F918 /* departmentCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = departmentCollectionViewController.swift; sourceTree = "<group>"; };
+		EBAAC9CC1DC72E560009ECA9 /* documentDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = documentDetailViewController.swift; sourceTree = "<group>"; };
+		EBAAC9CD1DC72E560009ECA9 /* documentDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = documentDetailViewController.xib; sourceTree = "<group>"; };
+		EBE5140F1DCC80B400F6E3C4 /* fileListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fileListViewController.swift; sourceTree = "<group>"; };
+		EBEB0F791DAF636B00B7BD68 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EBFB3D681D99039B00CE7A1A /* showPeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = showPeopleTableViewCell.swift; sourceTree = "<group>"; };
+		EBFB3D691D99039B00CE7A1A /* showPeopleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = showPeopleTableViewCell.xib; sourceTree = "<group>"; };
+		F3112D852069088FD33A0B13 /* Pods-permissionSystem2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-permissionSystem2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-permissionSystem2/Pods-permissionSystem2.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +213,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B61ECE371F87D98E2A4AD3EB /* Pods_permissionSystem2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,13 +234,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		204A0560B708668DF3679E33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3112D852069088FD33A0B13 /* Pods-permissionSystem2.debug.xcconfig */,
+				35F2EC3DBB70E57CA4B2A838 /* Pods-permissionSystem2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		857196073D743378CB245506 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E14E5D1B26877F4CB636BAA5 /* Pods_permissionSystem2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EB3F272F1D8FB5CF005C8F86 = {
 			isa = PBXGroup;
 			children = (
+				EB201F031DDAE7C00034556D /* MyViewController.swift */,
+				EB201F011DDAE7810034556D /* ChartViewController.swift */,
+				EB8FFF011DAE31DB0003A5C3 /* MBProgressHUD.h */,
+				EB757D011DB9B89D00767D60 /* 类的扩展 */,
+				EB8FFF041DAE32270003A5C3 /* MBProgressHUD-Bridging-Header.h */,
+				EB8FFF021DAE31DB0003A5C3 /* MBProgressHUD.m */,
+				EB6BEE241DACA5C900AD68A1 /* swift */,
+				EB8388DC1DAB3177007590C6 /* configureFile.swift */,
+				EB9BDD2E1DA8DCF400FF6B65 /* Common.swift */,
 				EB3F273A1D8FB5CF005C8F86 /* permissionSystem2 */,
 				EB3F274F1D8FB5CF005C8F86 /* permissionSystem2Tests */,
 				EB3F275A1D8FB5CF005C8F86 /* permissionSystem2UITests */,
 				EB3F27391D8FB5CF005C8F86 /* Products */,
+				204A0560B708668DF3679E33 /* Pods */,
+				857196073D743378CB245506 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,16 +293,13 @@
 				EB62D6A61D91068200394FC9 /* 权限管理系统 */,
 				EB62D6A51D91065E00394FC9 /* 显示人员 */,
 				EB62D6A21D90D56A00394FC9 /* 相关 */,
-				EB3F273B1D8FB5CF005C8F86 /* AppDelegate.swift */,
+				EB658BCB1DD404A100BB4E65 /* GuideViewController.swift */,
 				EB62D6A11D90D4D800394FC9 /* 选人 */,
 				EB62D6961D90D3D000394FC9 /* 最近 */,
 				EB3F27831D8FD0CF005C8F86 /* EnsureViewController.swift */,
 				EB62D69B1D90D42100394FC9 /* 部门 */,
 				EB62D69E1D90D49500394FC9 /* 组织 */,
-				EB3F273F1D8FB5CF005C8F86 /* Main.storyboard */,
-				EB3F27421D8FB5CF005C8F86 /* Assets.xcassets */,
-				EB3F27441D8FB5CF005C8F86 /* LaunchScreen.storyboard */,
-				EB3F27471D8FB5CF005C8F86 /* Info.plist */,
+				EB6FF5641DDBEE80009137A5 /* Main(主要) */,
 			);
 			path = permissionSystem2;
 			sourceTree = "<group>";
@@ -266,6 +403,33 @@
 			isa = PBXGroup;
 			children = (
 				EB3F276B1D8FC2A8005C8F86 /* showPeopleViewController.swift */,
+				EB8EBB301DCB16E300CEF708 /* showPeopleViewController4.swift */,
+				EB8EBB501DCB1F0D00CEF708 /* showPeopleViewController16.swift */,
+				EB8EBB581DCB22ED00CEF708 /* showPeopleViewController18.swift */,
+				EB8EBB4C1DCB1ED700CEF708 /* showPeopleViewController14.swift */,
+				EB8EBB521DCB1F2B00CEF708 /* showPeopleViewController17.swift */,
+				EB8EBB541DCB22A900CEF708 /* showPeopleViewController19.swift */,
+				EB8EBB4E1DCB1EF100CEF708 /* showPeopleViewController15.swift */,
+				EB8EBB3C1DCB196F00CEF708 /* showPeopleViewController7.swift */,
+				EB8EBB4A1DCB1DE700CEF708 /* showPeopleViewController13.swift */,
+				EB8EBB461DCB1DA600CEF708 /* showPeopleViewController11.swift */,
+				EB8EBB481DCB1DC600CEF708 /* showPeopleViewContropller12.swift */,
+				EB8EBB421DCB1D7800CEF708 /* shwoPeopleViewController10.swift */,
+				EB8EBB401DCB1D5300CEF708 /* showPeopleViewController9.swift */,
+				EB8EBB3E1DCB1CAA00CEF708 /* showPeopleViewController8.swift */,
+				EB8EBB341DCB176600CEF708 /* showPeopleViewController6.swift */,
+				EB8EBB321DCB172F00CEF708 /* showPeopleViewController5.swift */,
+				EB8EBB2E1DCB06D700CEF708 /* showPeopleviewController3.swift */,
+				EB8EBB2C1DCB066300CEF708 /* showPeopleViewController2.swift */,
+				EB8EBB2A1DCB054900CEF708 /* showPeopleViewController1.swift */,
+				EB0DD0D31DAA2DBA00B91C1B /* showDocumentViewController.swift */,
+				EBAAC9CC1DC72E560009ECA9 /* documentDetailViewController.swift */,
+				EBAAC9CD1DC72E560009ECA9 /* documentDetailViewController.xib */,
+				EB8DD0571DD2BA0400A3B09F /* shareViewController.swift */,
+				EB0DD0CF1DAA03A500B91C1B /* DocumentTableViewCell.swift */,
+				EB0DD0D01DAA03A500B91C1B /* DocumentTableViewCell.xib */,
+				EBFB3D681D99039B00CE7A1A /* showPeopleTableViewCell.swift */,
+				EBFB3D691D99039B00CE7A1A /* showPeopleTableViewCell.xib */,
 			);
 			name = "显示人员";
 			sourceTree = "<group>";
@@ -274,6 +438,21 @@
 			isa = PBXGroup;
 			children = (
 				EB3F27691D8FB649005C8F86 /* RootViewControler.swift */,
+				EB925C661DD0179700608003 /* shareAndReadViewController.swift */,
+				EB658BD11DD466AA00BB4E65 /* MyShareViewController.swift */,
+				EB62054C1DB73C9800B46383 /* mainViewController.swift */,
+				EB89DA851DB4A1600063DBA3 /* 部门文件夹 */,
+				EB9BDCF31DA8C38200FF6B65 /* permissionSystem2-Bridging-Header.h */,
+				EBEB0F791DAF636B00B7BD68 /* LoginViewController.swift */,
+				EB9F1CFF1DD9805300D8F918 /* TimeSearchViewController.swift */,
+				EB9F1D031DD9AE7500D8F918 /* departmentCollectionViewController.swift */,
+				EB62A26B1DDACF2E00F7B2F9 /* MyCollectionViewCell.swift */,
+				EBE5140F1DCC80B400F6E3C4 /* fileListViewController.swift */,
+				EB658BCF1DD4500F00BB4E65 /* fileSearchViewController.swift */,
+				EB7A1EE91DD198E300BA5620 /* DetailFileViewController.swift */,
+				EB6205501DB761CA00B46383 /* searchFileViewController.swift */,
+				EB62054A1DB701F800B46383 /* LeftViewController.swift */,
+				EB8388DE1DAB38EC007590C6 /* searchViewController.swift */,
 			);
 			name = "权限管理系统";
 			sourceTree = "<group>";
@@ -302,6 +481,71 @@
 			name = "选文";
 			sourceTree = "<group>";
 		};
+		EB6BEE241DACA5C900AD68A1 /* swift */ = {
+			isa = PBXGroup;
+			children = (
+				EB6BEE251DACA5C900AD68A1 /* SpreadButton.swift */,
+				EB6BEE261DACA5C900AD68A1 /* SpreadSubButton.swift */,
+			);
+			name = swift;
+			path = permissionSystem2/swift;
+			sourceTree = "<group>";
+		};
+		EB6FF5641DDBEE80009137A5 /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				EB6FF5681DDBEEF7009137A5 /* Tools */,
+				EB6FF5671DDBEEAE009137A5 /* Other */,
+				EB6FF5661DDBEEA5009137A5 /* Controller */,
+				EB6FF5651DDBEE97009137A5 /* Category */,
+			);
+			name = "Main(主要)";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		EB6FF5651DDBEE97009137A5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		EB6FF5661DDBEEA5009137A5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB201EFF1DDAE5840034556D /* RoottabbarController.swift */,
+				EB6FF56B1DDBFC85009137A5 /* LGNavigationController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		EB6FF5671DDBEEAE009137A5 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EB3F27471D8FB5CF005C8F86 /* Info.plist */,
+				EB3F27421D8FB5CF005C8F86 /* Assets.xcassets */,
+				EB3F273B1D8FB5CF005C8F86 /* AppDelegate.swift */,
+				EB658BCD1DD4099200BB4E65 /* Launch Screen.storyboard */,
+				EB3F273F1D8FB5CF005C8F86 /* Main.storyboard */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		EB6FF5681DDBEEF7009137A5 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				EB6FF5691DDBF63B009137A5 /* LGConst.swift */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		EB757D011DB9B89D00767D60 /* 类的扩展 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "类的扩展";
+			sourceTree = "<group>";
+		};
 		EB823A471D9269A500C1D72C /* 下拉菜单 */ = {
 			isa = PBXGroup;
 			children = (
@@ -326,6 +570,14 @@
 			path = "../../../Downloads/TreeTableViewWithSwift-master-2/TreeTableVIewWithSwift";
 			sourceTree = "<group>";
 		};
+		EB89DA851DB4A1600063DBA3 /* 部门文件夹 */ = {
+			isa = PBXGroup;
+			children = (
+				EB89DA861DB4A1A90063DBA3 /* departmentFile.swift */,
+			);
+			name = "部门文件夹";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -333,9 +585,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB3F27601D8FB5CF005C8F86 /* Build configuration list for PBXNativeTarget "permissionSystem2" */;
 			buildPhases = (
+				ABF601C78B7EB4366D409EFA /* [CP] Check Pods Manifest.lock */,
 				EB3F27341D8FB5CF005C8F86 /* Sources */,
 				EB3F27351D8FB5CF005C8F86 /* Frameworks */,
 				EB3F27361D8FB5CF005C8F86 /* Resources */,
+				1042B0685E05B055D4826895 /* [CP] Embed Pods Frameworks */,
+				BDB0D8F0CB24654BF9AC7CC4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -394,6 +649,7 @@
 				TargetAttributes = {
 					EB3F27371D8FB5CF005C8F86 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = W8Y9J3LMLC;
 					};
 					EB3F274B1D8FB5CF005C8F86 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -430,11 +686,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB3F27461D8FB5CF005C8F86 /* LaunchScreen.storyboard in Resources */,
+				EB0DD0D21DAA03A500B91C1B /* DocumentTableViewCell.xib in Resources */,
+				EBAAC9CF1DC72E560009ECA9 /* documentDetailViewController.xib in Resources */,
 				EB3F277C1D8FD047005C8F86 /* arrow@3x.png in Resources */,
 				EB823A561D926A1D00C1D72C /* tree_ex.png in Resources */,
 				EB823A541D926A1500C1D72C /* TreeNodeTableViewCell.xib in Resources */,
 				EB823A581D926A2300C1D72C /* tree_ec.png in Resources */,
+				EB658BCE1DD4099200BB4E65 /* Launch Screen.storyboard in Resources */,
+				EBFB3D6B1D99039B00CE7A1A /* showPeopleTableViewCell.xib in Resources */,
 				EB3F27431D8FB5CF005C8F86 /* Assets.xcassets in Resources */,
 				EB63F4181D94CE6600BD30DB /* DataInof.plist in Resources */,
 				EB3F27411D8FB5CF005C8F86 /* Main.storyboard in Resources */,
@@ -457,32 +716,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1042B0685E05B055D4826895 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-permissionSystem2/Pods-permissionSystem2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABF601C78B7EB4366D409EFA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BDB0D8F0CB24654BF9AC7CC4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-permissionSystem2/Pods-permissionSystem2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EB3F27341D8FB5CF005C8F86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB925C671DD0179800608003 /* shareAndReadViewController.swift in Sources */,
+				EB8EBB591DCB22ED00CEF708 /* showPeopleViewController18.swift in Sources */,
+				EB8EBB531DCB1F2B00CEF708 /* showPeopleViewController17.swift in Sources */,
+				EB9F1D001DD9805300D8F918 /* TimeSearchViewController.swift in Sources */,
+				EB8EBB491DCB1DC600CEF708 /* showPeopleViewContropller12.swift in Sources */,
+				EB6FF56A1DDBF63B009137A5 /* LGConst.swift in Sources */,
+				EB8EBB3F1DCB1CAA00CEF708 /* showPeopleViewController8.swift in Sources */,
 				EB3F273E1D8FB5CF005C8F86 /* ViewController.swift in Sources */,
+				EB658BD21DD466AA00BB4E65 /* MyShareViewController.swift in Sources */,
 				EB3F276A1D8FB649005C8F86 /* RootViewControler.swift in Sources */,
 				EB3F27701D8FCA76005C8F86 /* configure.swift in Sources */,
+				EB6BEE281DACA5C900AD68A1 /* SpreadSubButton.swift in Sources */,
 				EB63F4171D94CE6600BD30DB /* TreeNode.swift in Sources */,
 				EB3F277B1D8FD047005C8F86 /* SKScNavViewController.swift in Sources */,
 				EB3F277E1D8FD047005C8F86 /* SKLaunchMenu.swift in Sources */,
 				EB823A501D926A0600C1D72C /* TreeTableView.swift in Sources */,
+				EB62A26C1DDACF2E00F7B2F9 /* MyCollectionViewCell.swift in Sources */,
+				EB8EBB551DCB22A900CEF708 /* showPeopleViewController19.swift in Sources */,
 				EB3F27861D8FD73D005C8F86 /* choosePeopleViewController.swift in Sources */,
+				EB8388DD1DAB3177007590C6 /* configureFile.swift in Sources */,
+				EB8DD0581DD2BA0400A3B09F /* shareViewController.swift in Sources */,
+				EB8EBB4F1DCB1EF100CEF708 /* showPeopleViewController15.swift in Sources */,
+				EB7A1EEA1DD198E300BA5620 /* DetailFileViewController.swift in Sources */,
+				EB8EBB4D1DCB1ED700CEF708 /* showPeopleViewController14.swift in Sources */,
 				EB62D6A41D90D58100394FC9 /* relatedViewController.swift in Sources */,
 				EB63F4191D94CE6600BD30DB /* TreeNodeHelper.swift in Sources */,
+				EBEB0F7A1DAF636B00B7BD68 /* LoginViewController.swift in Sources */,
 				EB3F277D1D8FD047005C8F86 /* SKMacros.swift in Sources */,
 				EB3F27841D8FD0CF005C8F86 /* EnsureViewController.swift in Sources */,
+				EB8FFF031DAE31DB0003A5C3 /* MBProgressHUD.m in Sources */,
+				EB9BDD2F1DA8DCF400FF6B65 /* Common.swift in Sources */,
+				EB8388DF1DAB38EC007590C6 /* searchViewController.swift in Sources */,
+				EB8EBB3D1DCB196F00CEF708 /* showPeopleViewController7.swift in Sources */,
+				EB658BD01DD4500F00BB4E65 /* fileSearchViewController.swift in Sources */,
+				EB8EBB2F1DCB06D700CEF708 /* showPeopleviewController3.swift in Sources */,
+				EB6205511DB761CA00B46383 /* searchFileViewController.swift in Sources */,
+				EB6BEE271DACA5C900AD68A1 /* SpreadButton.swift in Sources */,
+				EB62054D1DB73C9800B46383 /* mainViewController.swift in Sources */,
 				EB3F277F1D8FD047005C8F86 /* SKLaunchMenuItem.swift in Sources */,
+				EB8EBB2B1DCB054900CEF708 /* showPeopleViewController1.swift in Sources */,
 				EB3F276E1D8FC7E1005C8F86 /* chooseDocumentViewController.swift in Sources */,
+				EBAAC9CE1DC72E560009ECA9 /* documentDetailViewController.swift in Sources */,
+				EB8EBB331DCB172F00CEF708 /* showPeopleViewController5.swift in Sources */,
 				EB823A521D926A0D00C1D72C /* TreeNodeTableViewCell.swift in Sources */,
+				EBFB3D6A1D99039B00CE7A1A /* showPeopleTableViewCell.swift in Sources */,
+				EB0DD0D41DAA2DBA00B91C1B /* showDocumentViewController.swift in Sources */,
 				EB62D69D1D90D43A00394FC9 /* departmentViewController.swift in Sources */,
+				EB8EBB431DCB1D7800CEF708 /* shwoPeopleViewController10.swift in Sources */,
 				EB3F273C1D8FB5CF005C8F86 /* AppDelegate.swift in Sources */,
+				EB9F1D041DD9AE7500D8F918 /* departmentCollectionViewController.swift in Sources */,
+				EB201F001DDAE5840034556D /* RoottabbarController.swift in Sources */,
+				EB8EBB2D1DCB066300CEF708 /* showPeopleViewController2.swift in Sources */,
+				EBE514101DCC80B400F6E3C4 /* fileListViewController.swift in Sources */,
+				EB8EBB471DCB1DA600CEF708 /* showPeopleViewController11.swift in Sources */,
 				EB3F27801D8FD047005C8F86 /* SKScNavBar.swift in Sources */,
+				EB8EBB511DCB1F0D00CEF708 /* showPeopleViewController16.swift in Sources */,
+				EB6FF56C1DDBFC85009137A5 /* LGNavigationController.swift in Sources */,
+				EB8EBB311DCB16E300CEF708 /* showPeopleViewController4.swift in Sources */,
+				EB8EBB351DCB176600CEF708 /* showPeopleViewController6.swift in Sources */,
+				EB62054B1DB701F800B46383 /* LeftViewController.swift in Sources */,
+				EB201F041DDAE7C00034556D /* MyViewController.swift in Sources */,
+				EB89DA871DB4A1A90063DBA3 /* departmentFile.swift in Sources */,
+				EB658BCC1DD404A100BB4E65 /* GuideViewController.swift in Sources */,
 				EB62D6981D90D3E500394FC9 /* recentlyViewController.swift in Sources */,
+				EB8EBB411DCB1D5300CEF708 /* showPeopleViewController9.swift in Sources */,
+				EB8EBB4B1DCB1DE700CEF708 /* showPeopleViewController13.swift in Sources */,
+				EB0DD0D11DAA03A500B91C1B /* DocumentTableViewCell.swift in Sources */,
 				EB62D6A01D90D4AE00394FC9 /* organizationViewController.swift in Sources */,
 				EB3F276C1D8FC2A8005C8F86 /* showPeopleViewController.swift in Sources */,
+				EB201F021DDAE7810034556D /* ChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,14 +880,7 @@
 				EB3F27401D8FB5CF005C8F86 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		EB3F27441D8FB5CF005C8F86 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EB3F27451D8FB5CF005C8F86 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			path = permissionSystem2;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -624,23 +973,37 @@
 		};
 		EB3F27611D8FB5CF005C8F86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3112D852069088FD33A0B13 /* Pods-permissionSystem2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = permissionSystem2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = luogang.permissionSystem2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "permissionSystem2/permissionSystem2-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
 		EB3F27621D8FB5CF005C8F86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35F2EC3DBB70E57CA4B2A838 /* Pods-permissionSystem2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = permissionSystem2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = luogang.permissionSystem2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "permissionSystem2/permissionSystem2-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};

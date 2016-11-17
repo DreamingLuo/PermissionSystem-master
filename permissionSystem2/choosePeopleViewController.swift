@@ -75,7 +75,7 @@
 //}
 import UIKit
 
-class choosePeopleViewController: UIViewController {
+class choosePeopleViewController: UIViewController,TreeTableViewCellDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -89,7 +89,20 @@ class choosePeopleViewController: UIViewController {
         
         // 初始化自定义的tableView
         let tableview: TreeTableView = TreeTableView(frame: CGRectMake(0, 20, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame)-20), withData: nodes)
+        
+        
+        
+        
+        tableview.allowsMultipleSelection=true
+        
+       
+        
+        
         self.view.addSubview(tableview)
+    }
+    
+    func cellClick(text:String) {
+        print(text)
     }
     
     override func didReceiveMemoryWarning() {
